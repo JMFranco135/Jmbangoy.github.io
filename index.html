@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>John Michael Bangoy | GHL Specialist & AI Automations</title>
-<meta name="description" content="GHL specialist and AI automations builder in Davao City. CRM systems, workflows and AI automations built to grow your business.">
+<meta name="description" content="JM Bangoy builds GoHighLevel CRM systems, lead-to-appointment workflows, webhook integrations, and operational automations for service businesses.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
@@ -45,6 +45,26 @@ h2{font:500 clamp(2.2rem,5vw,3.6rem)/1.05 var(--serif);margin:0 0 2.2rem}
 .card:hover{border-color:rgba(255,122,47,.55)}
 .card svg{width:2.6rem;height:2.6rem;fill:none;stroke:var(--a);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:1rem}
 .card h3{font:600 1.55rem/1.15 var(--serif);margin:0 0 .4rem}.card p{margin:0;color:var(--muted)}
+
+.section-lede{max-width:42rem;color:var(--muted);margin:-1.3rem 0 2rem;font-size:1.08rem}
+.project-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.project-card{border:1px solid var(--line);border-radius:8px;padding:clamp(1.25rem,3vw,2rem);background:linear-gradient(145deg,rgba(255,122,47,.07),transparent 45%),var(--card)}
+.project-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.project-number{font-size:.75rem;letter-spacing:.12em;color:var(--a);font-weight:600}
+.project-status{font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.25rem .65rem}
+.project-card h3{font:600 clamp(1.65rem,3vw,2.15rem)/1.1 var(--serif);margin:0 0 .8rem}
+.project-summary{max-width:58rem;color:var(--muted);margin:0 0 1.4rem}
+.flow{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:1.2rem 0 1.5rem}
+.flow span{font-size:.8rem;color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:.4rem .6rem;background:rgba(11,12,16,.6)}
+.flow b{font-size:.9rem;color:var(--a)}
+.project-card h4{font-size:.9rem;margin:0 0 .5rem}
+.project-card ul{padding-left:1.2rem;margin:.2rem 0 1.2rem;color:var(--muted)}
+.project-card li{margin:.35rem 0}
+.tags{display:flex;gap:.45rem;flex-wrap:wrap}
+.tags span{font-size:.75rem;color:var(--a);background:rgba(255,122,47,.08);border:1px solid rgba(255,122,47,.22);border-radius:999px;padding:.25rem .6rem}
+.project-note{font-size:.82rem;color:var(--muted);margin-top:1.2rem}
+@media (min-width:980px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-card:first-child{grid-column:1/-1}}
+
 .job{display:grid;grid-template-columns:11rem 1fr;gap:1.2rem;margin-bottom:1rem}
 .job .d{color:var(--muted);font-size:.92rem;padding-top:.4rem}.job h3{margin:0}.job .o{color:var(--a);margin:.1rem 0 .7rem}
 .job ul{margin:0;padding-left:1.1rem;color:var(--muted)}.job li{margin-bottom:.35rem}
@@ -63,13 +83,13 @@ footer{position:relative;z-index:1;padding:2rem 0 3rem;border-top:1px solid var(
 <body>
 <div class="prog" aria-hidden="true"></div>
 <canvas id="gl" aria-hidden="true"></canvas>
-<header><a class="n" href="#top">John Michael Bangoy</a><nav aria-label="Sections"><a href="#about">About</a><a href="#build">Services</a><a href="#work">Experience</a><a href="#reviews">Reviews</a><a href="#tools">Toolbox</a><a href="#contact">Contact</a></nav></header>
+<header><a class="n" href="#top">John Michael Bangoy</a><nav aria-label="Sections"><a href="#about">About</a><a href="#build">Services</a><a href="#projects">Projects</a><a href="#work">Experience</a><a href="#reviews">Reviews</a><a href="#tools">Toolbox</a><a href="#contact">Contact</a></nav></header>
 <main id="top">
 <div class="wrap hero">
   <small>GHL Specialist &amp; AI Automations / Davao City, Philippines</small>
-  <h1 data-split>Smarter systems. More freedom.</h1>
-  <p class="lede">I build CRM systems, workflows and AI automations to grow your business, using n8n, GoHighLevel, Claude Code and Zapier.</p>
-  <div class="cta"><a class="btn p" href="mailto:Jmbangoy.work@gmail.com">Email me</a><a class="btn" href="#work">See my experience</a></div>
+  <h1 data-split>Turn more leads into booked appointments.</h1>
+  <p class="lede">I build and troubleshoot GoHighLevel systems, CRM workflows, and integrations that help service businesses respond faster, stay organized, and reduce manual work.</p>
+  <div class="cta"><a class="btn p" href="#projects">Explore my projects</a><a class="btn" href="mailto:Jmbangoy.work@gmail.com?subject=Automation%20Project%20Inquiry">Discuss a project</a></div>
 </div>
 <div class="mq" aria-hidden="true"><div><span>GoHighLevel</span><span>n8n</span><span>Zapier</span><span>Make</span><span>Claude Code</span><span>Copilot</span><span>HubSpot</span><span>GoHighLevel</span><span>n8n</span><span>Zapier</span><span>Make</span><span>Claude Code</span><span>Copilot</span><span>HubSpot</span></div></div>
 
@@ -86,8 +106,43 @@ footer{position:relative;z-index:1;padding:2rem 0 3rem;border-top:1px solid var(
   <div class="card tl rv"><svg viewBox="0 0 36 36"><path d="M5 8h26v16H17l-6 5v-5H5z"/><path d="M12 15h12M12 19h7"/></svg><h3>Bots that answer for you</h3><p>Chatbot and voice assistants built with Zapier, Microsoft Copilot and Synthflow.</p></div>
 </div></div></section>
 
+<section id="projects"><div class="wrap">
+  <h2 class="rv">Selected automation projects</h2>
+  <p class="section-lede rv">Real systems built around the messy details of lead handling, appointment operations, and reporting—not just isolated automations.</p>
+  <div class="project-grid">
+    <article class="project-card rv">
+      <div class="project-top"><span class="project-number">01 / LEAD OPERATIONS</span><span class="project-status">Workflow build</span></div>
+      <h3>Lead-to-Appointment System</h3>
+      <p class="project-summary">Connected lead capture, CRM records, appointment activity, and team notifications so a new inquiry can move through the process with less manual handoff.</p>
+      <div class="flow" aria-label="Workflow steps"><span>Facebook Lead Form</span><b>→</b><span>GoHighLevel</span><b>→</b><span>Webhook / CRM</span><b>→</b><span>Slack Alert</span></div>
+      <h4>What I implemented</h4>
+      <ul><li>Mapped form fields into the right CRM fields.</li><li>Sent lead data to an external website/CRM through a webhook.</li><li>Synced native calendar appointment activity and pipeline status.</li><li>Created a Slack notification to help the team follow up quickly.</li></ul>
+      <div class="tags"><span>GoHighLevel</span><span>Webhooks</span><span>Field Mapping</span><span>Slack</span></div>
+    </article>
+    <article class="project-card rv">
+      <div class="project-top"><span class="project-number">02 / PERFORMANCE TRACKING</span><span class="project-status">Ops automation</span></div>
+      <h3>Lead Response Accountability Tracker</h3>
+      <p class="project-summary">A reporting workflow designed to make lead response activity visible and help the team spot missed or delayed follow-up.</p>
+      <div class="flow" aria-label="Workflow steps"><span>GHL Call Activity</span><b>→</b><span>Webhook</span><b>→</b><span>Google Sheets</span><b>→</b><span>Team Review</span></div>
+      <h4>What I implemented</h4>
+      <ul><li>Recorded lead and call-tracking details in a KPI sheet.</li><li>Tracked whether supported GHL-number calls were made within five minutes.</li><li>Flagged after-hours activity for operational review.</li><li>Matched tracked activity against lead data to help validate reporting.</li></ul>
+      <div class="tags"><span>GoHighLevel</span><span>Google Sheets</span><span>Webhooks</span><span>KPI Tracking</span></div>
+    </article>
+    <article class="project-card rv">
+      <div class="project-top"><span class="project-number">03 / APPOINTMENT EXPERIENCE</span><span class="project-status">Lifecycle workflows</span></div>
+      <h3>Appointment Nurture &amp; Lifecycle Automation</h3>
+      <p class="project-summary">A coordinated set of reminders and response paths that keeps customers informed and helps the team handle appointment changes consistently.</p>
+      <div class="flow" aria-label="Workflow steps"><span>Appointment Booked</span><b>→</b><span>Email / SMS</span><b>→</b><span>Reply Logic</span><b>→</b><span>Team Alert</span></div>
+      <h4>What I implemented</h4>
+      <ul><li>Scheduled confirmation and pre-appointment reminders.</li><li>Added reply handling and internal alerts for customer responses.</li><li>Applied tracking tags and opportunity updates.</li><li>Built cleanup logic for cancelled or rescheduled appointments to reduce stale workflow enrollment.</li></ul>
+      <div class="tags"><span>GoHighLevel</span><span>Email &amp; SMS</span><span>Calendar Logic</span><span>Workflow QA</span></div>
+    </article>
+  </div>
+  <p class="project-note rv">Project details are summarized for portfolio use; client-specific information and internal system details are intentionally omitted.</p>
+</div></section>
+
 <section id="work"><div class="wrap"><h2 class="rv">Where I've worked</h2>
-  <div class="card tl job rv"><div class="d">Jul 2025 to Sep 2026</div><div><h3>GHL &amp; Backend Automations Expert</h3><div class="o">Daygency</div><ul><li>Set up sub-accounts with snapshots, workflows, pipelines and automations.</li><li>Connected platforms and APIs for lead capture, follow-up and booking.</li><li>Built email and SMS nurture sequences and migrated sites from Shopify to GHL.</li></ul></div></div>
+  <div class="card tl job rv"><div class="d">Jul 2025 to Present</div><div><h3>GHL &amp; Backend Automations Expert</h3><div class="o">Daygency</div><ul><li>Set up sub-accounts with snapshots, workflows, pipelines and automations.</li><li>Connected platforms and APIs for lead capture, follow-up and booking.</li><li>Built email and SMS nurture sequences and migrated sites from Shopify to GHL.</li></ul></div></div>
   <div class="card tl job rv"><div class="d">Aug 2023 to Aug 2026</div><div><h3>Customer Support Specialist</h3><div class="o">Pencil Spaces</div><ul><li>Live chat and call support for an international client base, plus live platform demos.</li><li>Real-time troubleshooting and accurate data entry for internal operations.</li></ul></div></div>
   <div class="card tl job rv"><div class="d">Jan 2023 to Aug 2023</div><div><h3>Customer &amp; Technical Support Specialist</h3><div class="o">VXI Global Solutions</div><ul><li>Voice and non-voice support, technical troubleshooting and escalations.</li></ul></div></div>
   <div class="card tl job rv"><div class="d">Jul 2019 to Nov 2020</div><div><h3>Customer Service Representative</h3><div class="o">SixEleven Global Services and Solutions</div><ul><li>Inbound and outbound calls for appointment setting and support, in a high-volume environment.</li></ul></div></div>
