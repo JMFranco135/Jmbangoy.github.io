@@ -1,5 +1,5 @@
 /* Floating chat widget for JM's portfolio. Add before </body>:
-   <script src="chat-widget.js" data-endpoint="https://YOUR-WORKER.workers.dev" defer></script>
+   <script src="chat-widget.js" data-endpoint="https://portfolio-chatbot.jmbangoy.workers.dev" defer></script>
    Uses the site's own CSS variables (--a, --ink, --muted, --line, --serif, --sans). */
 (function () {
   var script = document.currentScript;
